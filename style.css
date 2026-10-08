@@ -1,0 +1,304 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffdf5;
+    color: #263b2d;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: 0 3px 15px #0000000d;
+}
+
+.navbar h1 {
+    color: #24834a;
+    font-size: 27px;
+}
+
+.navbar p {
+    color: #647568;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #e8f8e9, #fff8df);
+}
+
+.hero-content {
+    flex: 1 1 350px;
+    animation: slideUp 0.8s ease;
+}
+
+.tag {
+    display: inline-block;
+    background: #d2f0d8;
+    color: #237542;
+    padding: 8px 14px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero h3 {
+    color: #26804b;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    max-width: 550px;
+    color: #58675c;
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    background: #26804b;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.25s, background 0.25s;
+    margin: 5px;
+}
+
+button:hover {
+    background: #185d35;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1 1 250px;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #c9edce;
+    display: grid;
+    place-items: center;
+    font-size: 100px;
+    margin: 0 auto 20px;
+    box-shadow: 0 15px 35px #24834a20;
+}
+
+.hero-image h3 {
+    color: #263b2d;
+}
+
+.features,
+.lessons,
+.practice,
+.progress {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2,
+.lessons h2,
+.practice h2,
+.progress h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #68766c;
+    margin-bottom: 35px;
+}
+
+.feature-container,
+.lesson-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.feature-card,
+.lesson-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px #0000000a;
+    border: 1px solid #edf1e9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover,
+.lesson-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px #26804b18;
+}
+
+.feature-card span,
+.lesson-card span {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.feature-card h3,
+.lesson-card h3 {
+    margin-bottom: 10px;
+}
+
+.feature-card p,
+.lesson-card p {
+    color: #69766d;
+    font-size: 15px;
+}
+
+.lessons {
+    background: #f1f8ee;
+}
+
+.lesson-card button {
+    margin-top: 18px;
+}
+
+.practice-box {
+    background: white;
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 35px 20px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px #0000000b;
+}
+
+.practice-box h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #26804b;
+}
+
+#practiceMessage {
+    margin-top: 15px;
+    color: #26804b;
+}
+
+.progress {
+    background: #e8f8e9;
+}
+
+.progress-card {
+    display: inline-block;
+    background: white;
+    padding: 25px 50px;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #0000000a;
+}
+
+.progress-card span {
+    font-size: 35px;
+}
+
+.progress-card h3 {
+    font-size: 27px;
+    color: #26804b;
+}
+
+footer {
+    text-align: center;
+    background: #203e2c;
+    color: white;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #d5e6d8;
+    margin-top: 5px;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 6%;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features,
+    .lessons,
+    .practice,
+    .progress {
+        padding: 50px 6%;
+    }
+
+    .features h2,
+    .lessons h2,
+    .practice h2,
+    .progress h2 {
+        font-size: 27px;
+    }
+}
+```
