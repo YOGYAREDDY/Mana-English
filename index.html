@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana English | Learn English with Confidence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>🌱 Mana English</h1>
+        <p>Your Voice. Your Confidence. Your Future.</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">YOUR PERSONAL ENGLISH LEARNING PARTNER</span>
+            <h2>English nerchukundam! 🚀</h2>
+            <h3>Learn English. Speak Confidently.</h3>
+            <p>
+                Learn everyday English through simple lessons,
+                speaking practice, and real-life conversations.
+                Start your journey today!
+            </p>
+            <button onclick="startLearning()">Start Learning →</button>
+        </div>
+
+        <div class="hero-image">
+            <div class="circle">🗣️</div>
+            <h3>Every word takes you forward!</h3>
+            <p>Learn at your own pace.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Your Learning Journey ✨</h2>
+        <p class="section-description">
+            Small steps today. Better conversations tomorrow.
+        </p>
+
+        <div class="feature-container">
+            <div class="feature-card">
+                <span>📚</span>
+                <h3>Easy Lessons</h3>
+                <p>Learn useful English words and sentences step by step.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>🎤</span>
+                <h3>Speaking Practice</h3>
+                <p>Practice speaking English and build confidence.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>🤖</span>
+                <h3>AI Learning Buddy</h3>
+                <p>Explore guided conversations and everyday English.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>🏆</span>
+                <h3>Earn Rewards</h3>
+                <p>Complete lessons, earn points, and celebrate progress.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lessons" id="lessons">
+        <h2>Choose Your First Lesson 🎯</h2>
+
+        <div class="lesson-container">
+            <div class="lesson-card">
+                <span>👋</span>
+                <h3>Greetings</h3>
+                <p>Learn how to say hello and introduce yourself.</p>
+                <button onclick="openLesson('greetings')">Start Lesson</button>
+            </div>
+
+            <div class="lesson-card">
+                <span>🛍️</span>
+                <h3>Shopping</h3>
+                <p>Learn how to ask prices and buy things.</p>
+                <button onclick="openLesson('shopping')">Start Lesson</button>
+            </div>
+
+            <div class="lesson-card">
+                <span>🚌</span>
+                <h3>Travel</h3>
+                <p>Learn useful English for buses and journeys.</p>
+                <button onclick="openLesson('travel')">Start Lesson</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="practice">
+        <h2>Ready to Speak? 🎤</h2>
+        <p>Listen to a sentence and practice saying it aloud.</p>
+
+        <div class="practice-box">
+            <h3 id="practiceSentence">Hello! How are you?</h3>
+            <button onclick="speakSentence()">🔊 Listen</button>
+            <button onclick="nextSentence()">Next Sentence →</button>
+            <p id="practiceMessage"></p>
+        </div>
+    </section>
+
+    <section class="progress">
+        <h2>Your Progress 🌟</h2>
+        <p>Every lesson is a step toward confidence.</p>
+        <div class="progress-card">
+            <span>⭐</span>
+            <h3><span id="points">0</span> XP</h3>
+            <p>Learning points earned</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>🌱 Mana English</h2>
+        <p>Learn English. Open new opportunities.</p>
+        <p>Made with ❤️ for every learner.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
